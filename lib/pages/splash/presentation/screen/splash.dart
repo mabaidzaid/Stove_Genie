@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:stove_genie/bloc/cubit/auth_cubit.dart';
 import 'package:stove_genie/core/di_container.dart';
 import 'package:stove_genie/pages/auth/auth_gate.dart';
-import 'package:stove_genie/pages/on_boarding/presentation/screen/get_cooking.dart';
 import 'package:stove_genie/utils/helper.dart';
 import 'dart:async';
 

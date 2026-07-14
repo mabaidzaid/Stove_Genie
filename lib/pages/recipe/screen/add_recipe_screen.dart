@@ -209,7 +209,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
                             borderRadius: BorderRadius.circular(16),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.05),
+                                color: Colors.black.withValues(alpha: 0.05),
                                 blurRadius: 10,
                                 offset: const Offset(0, 4),
                               ),
@@ -256,7 +256,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
                             borderRadius: BorderRadius.circular(16),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.orange.withOpacity(0.3),
+                                color: Colors.orange.withValues(alpha: 0.3),
                                 blurRadius: 12,
                                 offset: const Offset(0, 6),
                               ),
@@ -308,7 +308,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
         Container(
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: Colors.orange.withOpacity(0.1),
+            color: Colors.orange.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(8),
           ),
           child: Icon(icon, color: Colors.orange, size: 20),
@@ -335,7 +335,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.08),
+            color: Colors.black.withValues(alpha: 0.08),
             blurRadius: 20,
             offset: const Offset(0, 8),
           ),
@@ -366,10 +366,10 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Colors.black.withOpacity(0.3),
+                Colors.black.withValues(alpha: 0.3),
                 Colors.transparent,
                 Colors.transparent,
-                Colors.black.withOpacity(0.3),
+                Colors.black.withValues(alpha: 0.3),
               ],
             ),
           ),
@@ -379,7 +379,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
           right: 12,
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.7),
+              color: Colors.black.withValues(alpha: 0.7),
               borderRadius: BorderRadius.circular(12),
             ),
             child: IconButton(
@@ -395,7 +395,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
           right: 12,
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.orange.withOpacity(0.9),
+              color: Colors.orange.withValues(alpha: 0.9),
               borderRadius: BorderRadius.circular(12),
             ),
             child: IconButton(
@@ -467,7 +467,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -538,7 +538,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.05),
+                color: Colors.black.withValues(alpha: 0.05),
                 blurRadius: 8,
                 offset: const Offset(0, 2),
               ),
@@ -550,7 +550,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
             leading: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: Colors.orange.withOpacity(0.1),
+                color: Colors.orange.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Text(
@@ -590,7 +590,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -662,7 +662,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
             borderRadius: BorderRadius.circular(12),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.05),
+                color: Colors.black.withValues(alpha: 0.05),
                 blurRadius: 8,
                 offset: const Offset(0, 2),
               ),
@@ -673,7 +673,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
             leading: Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: Colors.orange.withOpacity(0.1),
+                color: Colors.orange.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
@@ -721,7 +721,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen>
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.05),
+              color: Colors.black.withValues(alpha: 0.05),
               blurRadius: 10,
               offset: const Offset(0, 4),
             ),

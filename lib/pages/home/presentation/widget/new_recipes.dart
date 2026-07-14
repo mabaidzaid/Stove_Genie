@@ -307,13 +307,13 @@ class _NewRecipesState extends State<NewRecipes> with TickerProviderStateMixin {
                             color: AppColors.whiteColor,
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.08),
+                                color: Colors.black.withValues(alpha: 0.08),
                                 blurRadius: 20,
                                 offset: const Offset(0, 8),
                                 spreadRadius: 0,
                               ),
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.04),
+                                color: Colors.black.withValues(alpha: 0.04),
                                 blurRadius: 6,
                                 offset: const Offset(0, 2),
                                 spreadRadius: 0,
@@ -347,7 +347,7 @@ class _NewRecipesState extends State<NewRecipes> with TickerProviderStateMixin {
                                           horizontal: 8, vertical: 2),
                                       decoration: BoxDecoration(
                                         color: const Color(0xffffad30)
-                                            .withOpacity(0.1),
+                                            .withValues(alpha: 0.1),
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Row(
@@ -505,7 +505,7 @@ class _NewRecipesState extends State<NewRecipes> with TickerProviderStateMixin {
                         shape: BoxShape.circle,
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.15),
+                            color: Colors.black.withValues(alpha: 0.15),
                             blurRadius: 15,
                             offset: const Offset(0, 5),
                           ),
@@ -578,7 +578,7 @@ class _NewRecipesState extends State<NewRecipes> with TickerProviderStateMixin {
                         borderRadius: BorderRadius.circular(12),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0xffffad30).withOpacity(0.3),
+                            color: const Color(0xffffad30).withValues(alpha: 0.3),
                             blurRadius: 8,
                             offset: const Offset(0, 2),
                           ),

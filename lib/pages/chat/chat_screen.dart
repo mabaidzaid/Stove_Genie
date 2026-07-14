@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../services/gemini_api_service.dart';
+//import '../../services/gemini_api_service.dart';
 import '../../models/message_model.dart';
 import 'package:stove_genie/utils/colors.dart';
+import '../../services/groq_api_service.dart';
 
 
 class ChatScreen extends StatefulWidget {
@@ -13,9 +14,9 @@ class ChatScreen extends StatefulWidget {
 
 class _ChatScreenState extends State<ChatScreen> {
   final TextEditingController _controller = TextEditingController();
-  final GeminiAPIService _apiService = GeminiAPIService();
+  final GroqAPIService _apiService = GroqAPIService(); 
 
-  List<Message> _messages = [];
+  final List<Message> _messages = [];
   bool _isTyping = false;
 
   void _sendMessage() async {
@@ -28,7 +29,7 @@ class _ChatScreenState extends State<ChatScreen> {
       _isTyping = true;
     });
 
-    String botReply = await _apiService.getGeminiReply(input);
+    String botReply = await _apiService.getGroqReply(input);
 
     setState(() {
       _messages.add(Message(text: botReply, isUser: false));
@@ -55,7 +56,7 @@ class _ChatScreenState extends State<ChatScreen> {
         child: Container(
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: AppColors.buttonColor.withOpacity(0.1),
+            color: AppColors.buttonColor.withValues(alpha: 0.1),
             shape: BoxShape.circle,
           ),
           child: const Icon(Icons.arrow_back, color: AppColors.buttonColor),
@@ -79,13 +80,13 @@ class _ChatScreenState extends State<ChatScreen> {
                   ? const Padding(
                       padding: EdgeInsets.only(top: 30, left: 20, right: 20),
                       child: Align(
-                        alignment: Alignment.topLeft,
+                        alignment: Alignment.center,
                         child: Text(
                           "What would you like to Eat Today?",
                           style: TextStyle(
-                            color: Color.fromARGB(255, 124, 122, 122),
-                            fontSize: 70,
-                            fontWeight: FontWeight.w700,
+                            color: Color.fromARGB(255, 173, 168, 168),
+                            fontSize: 45,
+                            fontWeight: FontWeight.w900,
                           ),
                         ),
                       ),

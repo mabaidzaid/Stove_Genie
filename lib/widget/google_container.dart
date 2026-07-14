@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stove_genie/utils/colors.dart';
 
 class GoogleContainer extends StatelessWidget {
@@ -9,9 +8,9 @@ class GoogleContainer extends StatelessWidget {
 
   const GoogleContainer({
     this.onTap,
-    Key? key,
+    super.key,
     required this.image,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

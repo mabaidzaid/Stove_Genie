@@ -147,7 +147,7 @@ class _RecipeDetailsState extends State<RecipeDetails> {
                       Row(
                         children: [
                           Text(
-                            (widget.recipe!.reviews?.length ?? 0).toString(),
+                            (widget.recipe!.reviews.length ?? 0).toString(),
                             style: GoogleFonts.poppins(
                               fontWeight: FontWeight.w400,
                               fontSize: 14,

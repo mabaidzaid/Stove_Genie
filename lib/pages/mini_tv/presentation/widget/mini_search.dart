@@ -69,7 +69,7 @@ class _MiniSearchScreenState extends State<MiniSearchScreen> {
                 backgroundColor: AppColors.whiteColor,
                 context: context,
                 builder: (BuildContext context) {
-                  return Container(
+                  return SizedBox(
                     height: getHeight(context) * 0.65,
                     width: double.infinity,
                     child: const FilterScreen(),

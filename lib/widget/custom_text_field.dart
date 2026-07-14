@@ -91,12 +91,12 @@ class CustomTextField extends StatelessWidget {
         filled: true,
         fillColor: enabled!
             ? AppColors.fieldColor
-            : AppColors.fieldColor.withOpacity(0.5),
+            : AppColors.fieldColor.withValues(alpha: 0.5),
         hintText: text,
         hintStyle: GoogleFonts.poppins(
           fontSize: 11,
           fontWeight: FontWeight.w400,
-          color: AppColors.blackColor.withOpacity(.5),
+          color: AppColors.blackColor.withValues(alpha: .5),
         ),
         suffixIcon: xicon,
         contentPadding: const EdgeInsets.symmetric(

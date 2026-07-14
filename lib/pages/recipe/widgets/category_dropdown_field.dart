@@ -45,7 +45,7 @@ class CategoryDropdownField extends StatelessWidget {
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       ),
-      value: selectedCategory,
+      initialValue: selectedCategory,
       onChanged: onChanged,
       items: categories.map((String category) {
         return DropdownMenuItem<String>(

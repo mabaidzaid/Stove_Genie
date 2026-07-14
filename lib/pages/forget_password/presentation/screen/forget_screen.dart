@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:stove_genie/pages/forget_password/presentation/widget/forget_field.dart';
 import 'package:stove_genie/utils/colors.dart';
 import 'package:stove_genie/utils/helper.dart';
-import 'package:stove_genie/utils/images.dart';
 import 'package:stove_genie/widget/forget_text.dart';
 
 class ForgetScreen extends StatelessWidget {

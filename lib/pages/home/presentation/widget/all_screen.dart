@@ -231,7 +231,7 @@ class _RecepieWidgetState extends State<RecepieWidget> {
               height: 160,
               width: widget.width,
               decoration: BoxDecoration(
-                color: AppColors.containeColor.withOpacity(0.5),
+                color: AppColors.containeColor.withValues(alpha: 0.5),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(

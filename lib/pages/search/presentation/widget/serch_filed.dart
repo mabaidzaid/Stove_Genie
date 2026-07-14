@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:stove_genie/pages/filter_screen/presentation/screen/filter_screen.dart';
-import 'package:stove_genie/pages/search/presentation/screen/search_screen.dart';
 import 'package:stove_genie/utils/colors.dart';
 import 'package:stove_genie/utils/helper.dart';
 import 'package:stove_genie/utils/images.dart';
@@ -74,7 +73,7 @@ class _SearchFieldState extends State<SearchField> {
                 backgroundColor: AppColors.whiteColor,
                 context: context,
                 builder: (BuildContext context) {
-                  return Container(
+                  return SizedBox(
                     height: getHeight(context) * 0.65,
                     width: double.infinity,
                     child: const FilterScreen(),

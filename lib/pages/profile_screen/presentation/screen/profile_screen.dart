@@ -7,7 +7,6 @@ import 'package:stove_genie/models/recipe/recipe_model.dart';
 import 'package:stove_genie/pages/profile_screen/presentation/widget/my_receipe_widget.dart';
 import 'package:stove_genie/pages/profile_screen/presentation/widget/profile_row.dart';
 import 'package:stove_genie/utils/helper.dart';
-import 'package:stove_genie/utils/images.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});

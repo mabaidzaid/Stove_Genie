@@ -358,14 +358,14 @@ class _MiniTvScreenState extends State<MiniTvScreen>
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.1),
+            color: Colors.grey.withValues(alpha: 0.1),
             blurRadius: 10,
             offset: const Offset(0, 2),
           ),
         ],
         border: Border(
           bottom: BorderSide(
-            color: AppColors.buttonColor.withOpacity(0.2),
+            color: AppColors.buttonColor.withValues(alpha: 0.2),
             width: 2,
           ),
         ),
@@ -379,7 +379,7 @@ class _MiniTvScreenState extends State<MiniTvScreen>
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.buttonColor.withOpacity(0.3),
+                  color: AppColors.buttonColor.withValues(alpha: 0.3),
                   blurRadius: 8,
                   offset: const Offset(0, 2),
                 ),
@@ -429,7 +429,7 @@ class _MiniTvScreenState extends State<MiniTvScreen>
                 decoration: BoxDecoration(
                   color: const Color(0xFFF7FAFC),
                   borderRadius: BorderRadius.circular(8),
-                  border: Border.all(color: Colors.grey.withOpacity(0.3)),
+                  border: Border.all(color: Colors.grey.withValues(alpha: 0.3)),
                 ),
                 child: const Icon(
                   Icons.arrow_back,
@@ -456,7 +456,7 @@ class _MiniTvScreenState extends State<MiniTvScreen>
               color: AppColors.buttonColor,
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.buttonColor.withOpacity(0.3),
+                  color: AppColors.buttonColor.withValues(alpha: 0.3),
                   blurRadius: 20,
                   offset: const Offset(0, 10),
                 ),
@@ -483,7 +483,7 @@ class _MiniTvScreenState extends State<MiniTvScreen>
             width: 200,
             height: 4,
             decoration: BoxDecoration(
-              color: Colors.grey.withOpacity(0.2),
+              color: Colors.grey.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(2),
             ),
             child: FractionallySizedBox(
@@ -532,13 +532,13 @@ class _MiniTvScreenState extends State<MiniTvScreen>
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.1),
+                    color: Colors.grey.withValues(alpha: 0.1),
                     blurRadius: 15,
                     offset: const Offset(0, 5),
                   ),
                 ],
                 border: Border.all(
-                  color: Colors.grey.withOpacity(0.1),
+                  color: Colors.grey.withValues(alpha: 0.1),
                   width: 1,
                 ),
               ),
@@ -546,7 +546,7 @@ class _MiniTvScreenState extends State<MiniTvScreen>
                 children: [
                   Expanded(
                     flex: 3,
-                    child: Container(
+                    child: SizedBox(
                       width: double.infinity,
                       child: ClipRRect(
                         borderRadius: const BorderRadius.vertical(
@@ -578,7 +578,7 @@ class _MiniTvScreenState extends State<MiniTvScreen>
                                   vertical: 4,
                                 ),
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.9),
+                                  color: Colors.white.withValues(alpha: 0.9),
                                   borderRadius: BorderRadius.circular(12),
                                 ),
                                 child: Row(
@@ -697,13 +697,13 @@ class _MiniTvScreenState extends State<MiniTvScreen>
               color: Colors.white,
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.1),
+                  color: Colors.grey.withValues(alpha: 0.1),
                   blurRadius: 15,
                   offset: const Offset(0, 5),
                 ),
               ],
               border: Border.all(
-                color: Colors.grey.withOpacity(0.1),
+                color: Colors.grey.withValues(alpha: 0.1),
                 width: 1,
               ),
             ),
@@ -738,11 +738,11 @@ class _MiniTvScreenState extends State<MiniTvScreen>
                         child: Container(
                           padding: const EdgeInsets.all(15),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.9),
+                            color: Colors.white.withValues(alpha: 0.9),
                             shape: BoxShape.circle,
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.grey.withOpacity(0.3),
+                                color: Colors.grey.withValues(alpha: 0.3),
                                 blurRadius: 10,
                                 offset: const Offset(0, 2),
                               ),
@@ -765,11 +765,11 @@ class _MiniTvScreenState extends State<MiniTvScreen>
                             child: Container(
                               padding: const EdgeInsets.all(15),
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.9),
+                                color: Colors.white.withValues(alpha: 0.9),
                                 shape: BoxShape.circle,
                                 boxShadow: [
                                   BoxShadow(
-                                    color: Colors.grey.withOpacity(0.3),
+                                    color: Colors.grey.withValues(alpha: 0.3),
                                     blurRadius: 10,
                                     offset: const Offset(0, 2),
                                   ),
@@ -793,7 +793,7 @@ class _MiniTvScreenState extends State<MiniTvScreen>
                             vertical: 4,
                           ),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.9),
+                            color: Colors.white.withValues(alpha: 0.9),
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Text(

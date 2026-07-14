@@ -218,12 +218,8 @@ class AuthCubit extends Cubit<AuthState> {
       );
 
       final googleUser = await GoogleSignIn.instance.authenticate();
-      if (googleUser == null) {
-        emit(AuthError());
-        return;
-      }
 
-      final googleAuth = await googleUser.authentication;
+      final googleAuth = googleUser.authentication;
       final credential = GoogleAuthProvider.credential(
         idToken: googleAuth.idToken,
       );

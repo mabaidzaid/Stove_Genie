@@ -5,7 +5,7 @@ import 'package:badges/badges.dart' as badges;
 class NotificationIcon extends StatelessWidget {
   final bool? showBadge;
 
-  const NotificationIcon({Key? key, this.showBadge}) : super(key: key);
+  const NotificationIcon({super.key, this.showBadge});
 
   @override
   Widget build(BuildContext context) {
