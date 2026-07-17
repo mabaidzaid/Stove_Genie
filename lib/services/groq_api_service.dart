@@ -1,10 +1,11 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 
 class GroqAPIService {
 
-  final String apiKey = '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';
+  final String apiKey = dotenv.env['GROQ_API_KEY']!;
 
 
   Future<String> getGroqReply(String userMessage) async {

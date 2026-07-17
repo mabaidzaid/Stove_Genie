@@ -5,9 +5,11 @@ import 'package:stove_genie/core/di_container.dart';
 import 'package:stove_genie/firebase_options.dart';
 import 'package:stove_genie/pages/splash/presentation/screen/splash.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load();
   if (!kIsWeb &&
       (defaultTargetPlatform == TargetPlatform.windows ||
           defaultTargetPlatform == TargetPlatform.linux ||

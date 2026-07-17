@@ -1,9 +1,10 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class GeminiAPIService {
   // ✅ Your working Gemini 2.0 Flash API Key
-  final String apiKey = 'AQ.Ab8RN6Lvh5kA3ILAd3SJnLVfonlwL9WPd50446kkVgu_KMOWaA';
+  final String apiKey = dotenv.env['GEMINI_API_KEY']!;
 
   // ✅ Function to get Gemini reply
   Future<String> getGeminiReply(String userMessage) async {
